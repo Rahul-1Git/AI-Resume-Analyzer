@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  background-color: #ddd;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(94, 85, 75);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: larger;
+}
+
+.navbar-left {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: wheat;
+}
+
+.navbar-right {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: wheat;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: wheat;
+  color: black;
+}
+
+.nav-button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #332a2a;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+.nav-button:hover {
+  background-color: #333;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #abca0f;
+}
+/* Home page */
+.home-container {
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  line-height: 1.6;
+  background-color: wheat;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.home-container h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.feature-section ul {
+  padding-left: 20px;
+}
+
+.cta-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f5f5ff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.security-note {
+  margin-top: 20px;
+  background: #eefaf1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Login  */
+.login-container {
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: wheat;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  text-align: start;
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+}
+
+.login-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: rgb(119, 27, 205);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-button:hover:not([disabled]) {
+  background: rgb(46, 46, 186);
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-text {
+  margin-top: 10px;
+  color: red;
+  font-size: 15px;
+}
+
+/* Sign Up */
+.signup-container {
+  width: 380px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: wheat;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="number"],
+.signup-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  text-align: start;
+}
+
+.signup-form input:focus {
+  border-color: #007bff;
+}
+
+.file-label {
+  font-size: 14px;
+  text-align: left;
+  color: #555;
+}
+
+.signup-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: rgb(65, 65, 238);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signup-button:hover:not([disabled]) {
+  background: rgb(45, 45, 236);
+}
+
+.signup-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-text {
+  margin-top: 10px;
+  color: red;
+  font-size: 13px;
+}
+
+/* Profile */
+.profile-container {
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ebe4e4;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.profile-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loading-text {
+  font-size: 16px;
+  color: #777;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  object-fit: cover;
+}
+
+.profile-details {
+  text-align: left;
+  width: 100%;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.profile-details p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Upload Resume */
+.upload-container {
+  width: 450px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ebe4e4;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.upload-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.file-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upload-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #6a11cb; /* Purple gradient theme */
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.upload-button:hover:not([disabled]) {
+  background: #5011a7;
+}
+
+.upload-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-text {
+  margin-top: 10px;
+  color: red;
+  font-size: 13px;
+}
+
+.result-container {
+  margin-top: 20px;
+  text-align: left; /* Ensure container aligns left */
+}
+
+.analysis-output {
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+
+  text-align: left !important; /* Force left-aligned text */
+  margin: 0; /* Remove any auto centering */
+  display: block; /* Ensure it behaves like a text block */
+}
+.analysis-output ul {
+  padding-left: 18px; /* Reduce indent */
+  margin: 6px 0;
+}
+.analysis-output li {
+  margin-bottom: 4px; /* Tighten bullet spacing */
+}
