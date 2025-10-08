@@ -33,7 +33,7 @@ Built using **React**, **Redux Toolkit**, **Axios**, and **Tailwind CSS**.
 | Styling | Tailwind CSS |
 | API Calls | Axios |
 | Authentication | JWT (via backend) |
-| Hosting | Vercel / Netlify |
+| Hosting | Vercel  |
 
 ---
 
